@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="favorite_tv_series">Favorite TV Series</string>
+    <string name="title_movie">Favorite Movie</string>
+    <string name="title_head">Dynamic Feature Favorite</string>
+    <string name="subtitle_head">This Feature made with dynamic feature android</string>
+</resources>
