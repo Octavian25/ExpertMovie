@@ -1,5 +1,6 @@
 package com.octatech.expertmovie.ui.detail
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -32,12 +33,13 @@ class DetailActivityMovie : AppCompatActivity() {
         showDetailMovie(movies)
 
         binding.ivBack.setOnClickListener {
-            var intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun showDetailMovie(movies: Movie?) {
         movies?.let {
             Glide.with(this)

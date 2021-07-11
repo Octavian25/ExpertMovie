@@ -72,14 +72,14 @@ object DataMapper {
         input.map {
             val series = SeriesEntity(
                id = it.id,
-                backdropPath = it.backdropPath,
+                backdropPath = it.backdropPath ?: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png",
                 firstAirDate = it.firstAirDate,
                 name = it.name,
                 originalLanguage = it.originalLanguage,
                 originalName = it.originalName,
                 overview = it.overview,
                 popularity = it.popularity,
-                posterPath = it.posterPath,
+                posterPath = it.posterPath ?: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png",
                 voteAverage = it.voteAverage,
                 voteCount = it.voteCount,
                 isFavorite = false

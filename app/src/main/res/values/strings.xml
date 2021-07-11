@@ -22,7 +22,14 @@
     <string name="favorite">Favorite</string>
     <string name="title_favorite">Favorite</string>
     <string name="nama_user">OCTAVIAN</string>
-
+    <string name="details_movie">Details Movie</string>
+    <string name="storyline">Storyline</string>
+    <string name="favorite_tv_series">Favorite TV Series</string>
+    <string name="favorite_movie">Favorite Movie</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="octavian">Octavian</string>
+    <string name="top_movie">Top Movie</string>
+    <string name="back">back</string>
 
 
 </resources>

@@ -1,5 +1,6 @@
 package com.octatech.expertmovie.core.ui
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,6 +36,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ListViewHolder>() {
 
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val binding = ItemListMovieBinding.bind(itemView)
+        @SuppressLint("SetTextI18n")
         fun bind(data: Movie) {
             with(binding) {
                 Glide.with(itemView.context)

@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 data class SeriesResponse(
 
 	@field:SerializedName("backdrop_path")
-	val backdropPath: String,
+	val backdropPath: String?,
 
 	@field:SerializedName("first_air_date")
 	val firstAirDate: String,
@@ -35,5 +35,5 @@ data class SeriesResponse(
 	val voteCount: Int,
 
 	@field:SerializedName("poster_path")
-	val posterPath: String
+	val posterPath: String?
 )

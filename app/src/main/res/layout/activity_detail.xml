@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/background"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="Overdraw">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_bookmark_movie"
@@ -16,7 +17,9 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/favorite_white" />
+        app:srcCompat="@drawable/favorite_white"
+        android:contentDescription="@string/favorite"
+        android:focusable="true" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,7 +29,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/iv_back"
@@ -36,7 +39,8 @@
                 android:layout_marginTop="24dp"
                 android:src="@drawable/back"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/back" />
 
 
             <TextView
@@ -46,7 +50,7 @@
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Details Movie"
+                android:text="@string/details_movie"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +112,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Storyline"
+                android:text="@string/storyline"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"

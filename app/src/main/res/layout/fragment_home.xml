@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".ui.home.HomeActivity">
+    tools:context=".ui.home.HomeActivity"
+    tools:ignore="Overdraw">
 
 
     <ScrollView
@@ -17,7 +18,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/tv_title_series"
@@ -25,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="TV Series"
+                android:text="@string/tv_series"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/rv_movie"
@@ -63,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Top Movie"
+                android:text="@string/top_movie"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -75,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/poppins_light"
-                android:text="Good Morning"
+                android:text="@string/good_morning"
                 android:textColor="@color/text_second"
                 app:layout_constraintBottom_toTopOf="@+id/textView3"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
