@@ -5,6 +5,6 @@ import androidx.lifecycle.asLiveData
 import com.octatech.expertmovie.core.domain.usecase.MovieUseCase
 
 class FavoriteViewModel(movieUseCase: MovieUseCase) : ViewModel() {
-    var FavoriteMovie = movieUseCase.getFavoriteMovie().asLiveData()
-    var FavoriteSeries = movieUseCase.getFavoriteSeries().asLiveData()
+    var favoriteMovie = movieUseCase.getFavoriteMovie().asLiveData()
+    var favoriteSeries = movieUseCase.getFavoriteSeries().asLiveData()
 }

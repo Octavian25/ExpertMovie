@@ -1,4 +1,4 @@
-package com.octatech.expertmovie.core.di
+package com.octatech.expertmovie.di
 
 import com.octatech.expertmovie.core.domain.usecase.MovieInteractor
 import com.octatech.expertmovie.core.domain.usecase.MovieUseCase

@@ -1,3 +1,5 @@
+@file:Suppress("RemoveExplicitTypeArguments")
+
 package com.octatech.expertmovie.core.source
 
 import com.octatech.expertmovie.core.source.remote.network.ApiResponse

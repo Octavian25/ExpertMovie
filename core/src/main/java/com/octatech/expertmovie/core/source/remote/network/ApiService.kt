@@ -10,5 +10,9 @@ interface ApiService {
      suspend fun getMovie(@Query("api_key") api_key : String, @Query("language") language : String): ListMovieResponse
 
     @GET("tv/on_the_air")
-     suspend fun getSeries(@Query("api_key") api_key : String, @Query("language") language : String,@Query("page") page : Int,): ListSeriesResponse
+     suspend fun getSeries(
+        @Query("api_key") api_key: String,
+        @Query("language") language: String,
+        @Query("page") page: Int,
+    ): ListSeriesResponse
 }

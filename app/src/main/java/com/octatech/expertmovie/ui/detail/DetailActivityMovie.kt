@@ -2,10 +2,9 @@ package com.octatech.expertmovie.ui.detail
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.octatech.expertmovie.BuildConfig
 import com.octatech.expertmovie.R

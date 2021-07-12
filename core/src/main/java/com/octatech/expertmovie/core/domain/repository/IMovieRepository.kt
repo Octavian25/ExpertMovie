@@ -1,6 +1,5 @@
 package com.octatech.expertmovie.core.domain.repository
 
-import androidx.lifecycle.LiveData
 import com.octatech.expertmovie.core.domain.model.Movie
 import com.octatech.expertmovie.core.domain.model.Series
 import com.octatech.expertmovie.core.source.Resource

@@ -1,7 +1,5 @@
 package com.octatech.expertmovie.core.source.local.room
 
-import android.graphics.Movie
-import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.octatech.expertmovie.core.source.local.entity.MovieEntity
 import com.octatech.expertmovie.core.source.local.entity.SeriesEntity

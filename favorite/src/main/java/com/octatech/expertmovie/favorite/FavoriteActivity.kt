@@ -1,12 +1,9 @@
 package com.octatech.expertmovie.favorite
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.octatech.expertmovie.core.source.Resource
 import com.octatech.expertmovie.core.ui.MovieAdapter
 import com.octatech.expertmovie.core.ui.SeriesAdapter
 import com.octatech.expertmovie.favorite.databinding.ActivityFavoriteBinding
@@ -55,12 +52,12 @@ class FavoriteActivity : AppCompatActivity() {
         }
 
 
-        favoriteViewModel.FavoriteMovie.observe(this, { movie ->
+        favoriteViewModel.favoriteMovie.observe(this, { movie ->
             if (movie != null) {
                 movieAdapter.setData(movie)
             }
         })
-        favoriteViewModel.FavoriteSeries.observe(this, { series ->
+        favoriteViewModel.favoriteSeries.observe(this, { series ->
             if (series != null) {
                 seriesAdapter.setData(series)
             }
