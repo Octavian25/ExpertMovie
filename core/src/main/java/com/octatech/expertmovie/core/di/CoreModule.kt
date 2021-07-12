@@ -9,6 +9,8 @@ import com.octatech.expertmovie.core.source.local.room.MovieDatabase
 import com.octatech.expertmovie.core.source.remote.RemoteDataSource
 import com.octatech.expertmovie.core.source.remote.network.ApiService
 import com.octatech.expertmovie.core.utils.AppExecutors
+import net.sqlcipher.database.SQLiteDatabase
+import net.sqlcipher.database.SupportFactory
 import okhttp3.CertificatePinner
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -21,10 +23,14 @@ import java.util.concurrent.TimeUnit
 val databaseModule = module {
     factory { get<MovieDatabase>().movieDao() }
     single {
+        val passphrase: ByteArray = SQLiteDatabase.getBytes("gamesstore".toCharArray())
+        val factory = SupportFactory(passphrase)
         Room.databaseBuilder(
             androidContext(),
-            MovieDatabase::class.java, "Movie.db"
-        ).fallbackToDestructiveMigration().build()
+            MovieDatabase::class.java, "Movie"
+        ).fallbackToDestructiveMigration()
+            .openHelperFactory(factory)
+            .build()
     }
 }
 
